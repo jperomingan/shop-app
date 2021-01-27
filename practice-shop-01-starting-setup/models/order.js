@@ -1,4 +1,4 @@
-import * as moment from 'moment';
+import Moment from 'react-moment';
 
 class Order {
     constructor(id, items, totalAmount, date) {
@@ -16,7 +16,7 @@ class Order {
         //     minute: '2-digit'
         // })
 
-        return moment(this.date).format('MMMM Do YYYY, hh:mm');
+        return Moment(this.date).format('MMMM Do YYYY, hh:mm');
     }
 }
 
